@@ -97,3 +97,8 @@ html,body,#main{box-sizing:border-box;margin:0;padding:0}:root{-webkit-font-smoo
 :root body { background: var(--token-f3402aac-b331-4d1f-9347-5867725675d8, rgb(14, 14, 14)); }
 
 html body { background: var(--token-f3402aac-b331-4d1f-9347-5867725675d8, rgb(14, 14, 14)); }
+
+/* Preserve Framer's hydrated first-frame visibility in the static React render. */
+[data-framer-name="Desktop/Ticker"] > section,
+[data-framer-name="Mobile/Ticker"] > section { opacity: 1 !important; }
+#ley9m a [data-framer-name="Content Container"]::before { content: "▷"; color: #ffffff; font-size: 10px; line-height: 1; }
